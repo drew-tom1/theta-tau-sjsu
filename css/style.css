@@ -9,6 +9,8 @@
   --black: #141416;
   --grey: #787e91;
   --red: #871a1f;
+  --light-grey: #787e91;
+  --lighter-grey: #e4e4e4;
 }
 
 body {
@@ -97,6 +99,11 @@ img {
   color: var(--red);
 }
 
+/* Text Effects */
+.text-effect {
+  background: linear-gradient(90deg, #871a1f, #c92228, #ec4c51, #9a3032);
+}
+
 /* Icons */
 .btn-light img {
   width: 20px; /* Set the width */
@@ -154,10 +161,13 @@ img {
   font-size: 8rem;
 }
 
+.text-xl {
+  font-size: 3rem;
+}
+
 /* Hero */
 .hero {
-  background: 
-  linear-gradient(
+  background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.5),
@@ -168,7 +178,7 @@ img {
   background-position: center;
   background-attachment: fixed;
   background-blend-mode: darken;
-  height: 100vh;
+  height: 85vh;
   width: 100%;
 }
 
@@ -198,4 +208,86 @@ img {
 
 .hero-text .hero-coed-text {
   font-weight: 600;
+}
+
+/* About Us */
+.about {
+  height: 85vh;
+}
+
+.about-heading {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.about-subheading {
+  color: var(--yellow);
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  font-weight: 600;
+  margin-right: 900px;
+}
+
+.about-description {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.description-text {
+  color: var(--light-grey);
+  text-align: left;
+  flex: 1;
+  max-width: 50%;
+}
+
+.description-image {
+  width: 50%;
+  max-width: 700px;
+  height: auto;
+}
+
+/* Values & Cards */
+
+.values {
+  background-color: #1f1f1f;
+  height: 55vh;
+}
+
+.values-heading {
+  color: var(--lighter-grey);
+  padding: 40px 0px 30px 0px;
+}
+
+.values-labels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+
+.card-number {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--lighter-grey);
+  border-bottom: 1px solid #f3f3f3;
+  margin-bottom: 10px;
+}
+
+.card-name {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--yellow);
+  padding-bottom: 30px;
+}
+
+.card-text {
+  font-size: 20px;
+  color: var(--lighter-grey);
 }
