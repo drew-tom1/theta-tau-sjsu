@@ -101,7 +101,24 @@ img {
 
 /* Text Effects */
 .text-effect {
-  background: linear-gradient(90deg, #871a1f, #c92228, #ec4c51, #9a3032);
+  background: linear-gradient(90deg, #6d0b0e, #871a1f, #b51e22, #c92228, #e03a3f, #ec4c51, #f5a623, #d99a19);
+  background-size: 400% 400%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradient-shift 10s infinite linear;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Icons */
