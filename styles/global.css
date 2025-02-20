@@ -190,7 +190,7 @@ img {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0)
     ),
-    url("../images/group1.png") no-repeat;
+    url("../public/images/group1.png") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
