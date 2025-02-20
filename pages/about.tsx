@@ -8,7 +8,7 @@ export default function About() {
     <>
       {/* Head Section */}
       <Head>
-        <title>About Us - Theta Tau SJSU</title>
+        <title>About Us</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
       </Head>
@@ -79,6 +79,25 @@ export default function About() {
                   personal growth for our members.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="alumni-network">
+        <div className="container">
+          <div className="alumni-network-content">
+            <h1 className="alumni-network-heading text-xl">Our Alumni Network</h1>
+
+            <p className="alumni-network-text">
+              Theta Tau is a co-ed professional engineering fraternity here at
+              SJSU. We are a close knit brotherhood that encourages our members
+              to excel professionally and give back to the surrounding
+              community.
+            </p>
+
+            <div className="alumni-network-companies">
+
             </div>
           </div>
         </div>

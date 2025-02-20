@@ -13,6 +13,15 @@
   --lighter-grey: #e4e4e4;
 }
 
+/* Colors */
+.red {
+  color: var(--red);
+}
+
+.light-color {
+  color: var(--lighter-grey);
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -95,35 +104,55 @@ img {
   padding: 0 15px;
 }
 
-.red {
-  color: var(--red);
-}
-
 /* Text Effects */
 .text-effect {
-  background: linear-gradient(90deg, #6d0b0e, #871a1f, #b51e22, #c92228, #e03a3f, #ec4c51, #f5a623, #d99a19);
-  background-size: 400% 400%;
+  background: linear-gradient(
+    90deg,
+    #6d0b0e,
+    #871a1f,
+    #b51e22,
+    #c92228,
+    #e03a3f,
+    #ec4c51,
+    #f5a623,
+    #d99a19,
+    #f5a623,
+    #ec4c51,
+    #e03a3f,
+    #c92228,
+    #b51e22,
+    #871a1f,
+    #6d0b0e,
+    #6d0b0e
+  );
+  background-size: 500% 500%;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  animation: gradient-shift 10s infinite linear;
+  animation: gradient-shift 12s infinite linear;
 }
 
 @keyframes gradient-shift {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 50% 25%;
   }
   50% {
     background-position: 100% 50%;
   }
+  75% {
+    background-position: 50% 75%;
+  }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 100%;
   }
 }
 
 /* Icons */
 .btn-light img {
-  width: 20px; 
+  width: 20px;
   height: auto;
   vertical-align: middle;
   margin-left: 2px;
@@ -182,6 +211,14 @@ img {
   font-size: 3rem;
 }
 
+.text-m {
+  font-size: 2rem;
+}
+
+.text-s {
+  font-size: 1.5rem;
+}
+
 /* Hero */
 .hero {
   background: linear-gradient(
@@ -195,7 +232,7 @@ img {
   background-position: center;
   background-attachment: fixed;
   background-blend-mode: darken;
-  height: 85vh;
+  height: 89vh;
   width: 100%;
 }
 
@@ -207,7 +244,7 @@ img {
 }
 
 .hero-heading span:nth-last-child(2) {
-  padding-top: 150px;
+  padding-top: 250px;
 }
 
 .hero-text {
@@ -229,7 +266,7 @@ img {
 
 /* About Us */
 .about {
-  height: 85vh;
+  height: 100vh;
 }
 
 .about-heading {
@@ -239,6 +276,7 @@ img {
   align-items: center;
   text-align: center;
   height: 100%;
+  padding-top:30px;
 }
 
 .about-subheading {
@@ -255,8 +293,8 @@ img {
   align-items: center;
   text-align: left;
   justify-content: space-between;
-  gap: 80px;
-  padding-top: 20px;
+  gap: 20px;
+  padding-top: 60px;
 }
 
 .description-text {
@@ -281,12 +319,12 @@ img {
 
 .values {
   background-color: #1f1f1f;
-  height: 55vh;
+  height: 60vh;
 }
 
 .values-heading {
   color: var(--lighter-grey);
-  padding: 40px 0px 30px 0px;
+  padding: 80px 0px 30px 0px;
 }
 
 .values-labels {
@@ -313,4 +351,98 @@ img {
 .card-text {
   font-size: 20px;
   color: var(--lighter-grey);
+}
+
+/* Alumni Network Section */
+.alumni-network {
+  height: 100vh;
+}
+.alumni-network-heading {
+  color: var(--lighter-grey);
+  padding-top: 100px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alumni-network-text {
+  color: var(--lighter-grey);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* FAQ */
+
+.faq {
+  padding: 40px 0px;
+}
+
+.faq-menu {
+  color: var(--lighter-grey);
+}
+
+.faq h3 {
+  text-align: center;
+}
+
+.faq .faq-group {
+  border-bottom: 1px solid var(--lighter-grey);
+  padding-bottom: 20px;
+  color: var(--lighter-grey);
+}
+
+.faq .faq-group .faq-group-header {
+  padding: 20px 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.faq .faq-group .faq-group-header h4 {
+  font-weight: 600;
+  width: 95%;
+}
+
+.faq .faq-group .faq-group-header .fa {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.faq .faq-group .faq-group-body {
+  display: none;
+}
+
+.faq .faq-group .faq-group-body.open {
+  display: block;
+}
+
+.faq ul.faq-menu {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+  background: var(--grey);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.faq ul.faq-menu li {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.faq ul.faq-menu li.active {
+  background: var(--yellow);
 }

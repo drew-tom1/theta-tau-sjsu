@@ -31,13 +31,16 @@ export default function Navbar() {
               <Link href="#">Rush</Link>
             </li>
             <li>
+              <Link href="/faq">FAQ</Link>
+            </li>
+            <li>
               <Link href="#" className="btn btn-dark">
-                <i className="fas fa-user">Sign In</i>
+                <i className="fas">Sign In</i>
               </Link>
             </li>
             <li>
               <Link href="#" className="btn btn-light">
-                <i className="fas fa-user apply">Apply</i>
+                <i className="fas apply">Apply</i>
               </Link>
             </li>
           </ul>
