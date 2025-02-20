@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Link from "next/link";
+// import Link from "next/link";
 import Image from "next/image";
-import Navbar from "../components/Navbar"; // Navbar component
+import Navbar from "../components/Navbar";
 
 export default function About() {
   return (
@@ -10,7 +10,7 @@ export default function About() {
       <Head>
         <title>About Us - Theta Tau SJSU</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -19,7 +19,7 @@ export default function About() {
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
           rel="stylesheet"
-        />
+        /> */}
         <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
       </Head>
 
@@ -46,8 +46,8 @@ export default function About() {
               <Image
                 src="/images/group2.png"
                 alt="Group Photo version 2"
-                width={700} // Adjust width as needed
-                height={500} // Adjust height as needed
+                width={700} 
+                height={500}
                 className="description-image"
               />
             </div>
