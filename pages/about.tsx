@@ -34,19 +34,20 @@ export default function About() {
               The Premier Professional Engineering Fraternity
             </h1>
 
-            <h2 className="about-subheading">WHO ARE WE?</h2>
-
             <div className="about-description">
-              <p className="description-text">
-                Theta Tau is a co-ed professional engineering fraternity at
-                SJSU, built on fostering strong bonds among members. We strive
-                to support professional growth while making a positive impact on
-                our community.
-              </p>
+              <div className="about-subtitle-text">
+                <h2 className="about-subheading">WHO ARE WE?</h2>
+                <p className="description-text">
+                  Theta Tau is a co-ed professional engineering fraternity at
+                  SJSU, built on fostering strong bonds among members. We strive
+                  to support professional growth while making a positive impact
+                  on our community.
+                </p>
+              </div>
               <Image
                 src="/images/group2.png"
                 alt="Group Photo version 2"
-                width={700} 
+                width={700}
                 height={500}
                 className="description-image"
               />
