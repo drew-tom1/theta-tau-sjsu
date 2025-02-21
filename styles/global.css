@@ -11,6 +11,17 @@
   --red: #871a1f;
   --light-grey: #787e91;
   --lighter-grey: #e4e4e4;
+
+  /* Aurora Root Elements */
+  --bg: #000000;
+  --clr-1: #00c2ff;
+  --clr-2: #33ff8c;
+  --clr-3: #ffc640;
+  --clr-4: #e54cff;
+
+  --blur: 1rem;
+  --fs: clamp(3rem, 8vw, 7rem);
+  --ls: clamp(-1.75px, -0.25vw, -3.5px);
 }
 
 /* Colors */
@@ -129,7 +140,7 @@ img {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  animation: gradient-shift 12s infinite linear;
+  animation: gradient-shift 20s infinite linear;
 }
 
 @keyframes gradient-shift {
@@ -217,6 +228,14 @@ img {
 
 .text-s {
   font-size: 1.5rem;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.text-thick {
+ font-weight: 600;
 }
 
 /* Hero */
@@ -388,6 +407,7 @@ img {
 
 .faq h3 {
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .faq .faq-group {
@@ -397,7 +417,7 @@ img {
 }
 
 .faq .faq-group .faq-group-header {
-  padding: 20px 0;
+  padding: 40px 0;
   margin-bottom: 15px;
   position: relative;
 }
@@ -446,3 +466,29 @@ img {
 .faq ul.faq-menu li.active {
   background: var(--yellow);
 }
+
+
+
+
+/* Transitions (NEED CONFIGURING) */
+.slideTransition {
+  animation: slideInDown 2s;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+
+
+
