@@ -1,69 +1,71 @@
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMinus, faP } from "@fortawesome/free-solid-svg-icons";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import Script from "next/script";
 import Navbar from "../components/Navbar";
 import { useEffect } from "react";
 
 export default function faq() {
   // FAQ Typescript
+useEffect(() => {
+  const faqContainer = document.querySelector(".faq-content");
 
-  useEffect(() => {
-    const faqContainer = document.querySelector(".faq-content");
+  // Explicitly type the event as 'Event'
+  const handleClick = (e: Event) => {
+    const target = e.target as HTMLElement | null;
 
-    const handleClick = (e: MouseEvent) => {
-      const groupHeader = e.target.closest(".faq-group-header") as HTMLElement;
+    if (!target) return;
 
-      if (!groupHeader) return;
+    const groupHeader = target.closest(
+      ".faq-group-header"
+    ) as HTMLElement | null;
 
-      const group = groupHeader.parentElement;
-      const groupBody = group?.querySelector(".faq-group-body");
-      const icon = groupHeader.querySelector("svg");
+    if (!groupHeader) return;
 
-      // FAQ answer visibility
-      if (groupBody) {
-        groupBody.classList.toggle("open");
-      }
+    const group = groupHeader.parentElement;
+    const groupBody = group?.querySelector(".faq-group-body");
+    const icon = groupHeader.querySelector("svg"); // For FontAwesome icons
 
-      // Close other OPEN faq Body
-      const otherGroups = faqContainer?.querySelectorAll(".faq-group");
-
-      otherGroups?.forEach((otherGroups) => {
-        if (otherGroups !== group) {
-          const otherGroupBody = otherGroups.querySelector(".faq-group-body");
-          const otherIcon = otherGroups.querySelector(".faq-group-header svg");
-
-          otherGroupBody?.classList.remove("open");
-          otherIcon?.classList.remove('fa-minus');
-          otherIcon?.classList.add('fa-plus');
-        }
-      });
-
-      // Icon Toggle (its high key low key not workinggggg ;-; ;-; ;-; ;-; ;-; 
-
-      if (icon) {
-        if (icon.classList.contains("fa-plus")) {
-          icon.classList.remove("fa-plus");
-          icon.classList.add("fa-minus");
-        } else {
-          icon.classList.remove("fa-minus");
-          icon.classList.add("fa-plus");
-        }
-      }
-      
-    };
-
-    if (faqContainer) {
-      faqContainer.addEventListener("click", handleClick);
+    // Toggle the FAQ answer visibility
+    if (groupBody) {
+      groupBody.classList.toggle("open");
     }
 
-    return () => {
-      if (faqContainer) {
-        faqContainer.removeEventListener("click", handleClick);
+    // Close other FAQ bodies when opening a new one
+    const otherGroups = faqContainer?.querySelectorAll(".faq-group");
+    otherGroups?.forEach((otherGroup) => {
+      if (otherGroup !== group) {
+        const otherGroupBody = otherGroup.querySelector(".faq-group-body");
+        const otherIcon = otherGroup.querySelector(".faq-group-header svg");
+
+        otherGroupBody?.classList.remove("open");
+        otherIcon?.classList.remove("fa-minus");
+        otherIcon?.classList.add("fa-plus");
       }
-    };
-  }, []);
+    });
+
+    // Icon Toggle
+    if (icon) {
+      if (icon.classList.contains("fa-plus")) {
+        icon.classList.remove("fa-plus");
+        icon.classList.add("fa-minus");
+      } else {
+        icon.classList.remove("fa-minus");
+        icon.classList.add("fa-plus");
+      }
+    }
+  };
+
+  if (faqContainer) {
+    faqContainer.addEventListener("click", handleClick as EventListener);
+  }
+
+  return () => {
+    if (faqContainer) {
+      faqContainer.removeEventListener("click", handleClick as EventListener);
+    }
+  };
+}, []);
 
   return (
     <>

@@ -3,6 +3,7 @@ import Head from "next/head";
 // import Image from "next/image";
 import Script from "next/script";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -35,6 +36,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Footer Component */}
+      <Footer />
 
       {/* Load External JS */}
       <Script src="/js/main.js" strategy="lazyOnload" />

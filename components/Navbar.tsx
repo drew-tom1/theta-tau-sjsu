@@ -1,13 +1,26 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
-export default function Navbar() {
+const Navbar: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+
+  const toggleMenu = (): void => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <nav className="navbar">
       <div className="container">
+        {/* Logo Section */}
         <div className="logo">
           <Link href="/">
-            <Image src="/images/logo.png" alt="logo" width={50} height={50} />
+            <Image
+              src="/images/logo.png"
+              alt="logo one"
+              width={50}
+              height={50}
+            />
           </Link>
           <div className="emblem">
             <Link href="/" className="text-effect">
@@ -19,7 +32,48 @@ export default function Navbar() {
           </div>
         </div>
 
+        {/* Main Menu for Desktop */}
         <div className="main-menu">
+          <ul>
+            <li>
+              <Link href="/about">About Us</Link>
+            </li>
+            <li>
+              <Link href="#">Brothers</Link>
+            </li>
+            <li>
+              <Link href="#">Rush</Link>
+            </li>
+            <li>
+              <Link href="/faq">FAQ</Link>
+            </li>
+            <li>
+              <Link href="#" className="btn btn-dark">
+                <i className="fas">Sign In</i>
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="btn btn-light">
+                <i className="fas apply">Apply</i>
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Hamburger Button for Mobile */}
+        <button
+          id="hamburger-button"
+          onClick={toggleMenu}
+          className="hamburger-button"
+          aria-label="Toggle mobile menu"
+        >
+          <div className="hamburger-line"></div>
+          <div className="hamburger-line"></div>
+          <div className="hamburger-line"></div>
+        </button>
+
+        {/* Mobile Menu */}
+        <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
           <ul>
             <li>
               <Link href="/about">About Us</Link>
@@ -48,4 +102,6 @@ export default function Navbar() {
       </div>
     </nav>
   );
-}
+};
+
+export default Navbar;
