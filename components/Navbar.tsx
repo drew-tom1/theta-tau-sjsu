@@ -49,12 +49,12 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <Link href="#" className="btn btn-dark">
-                <i className="fas">Sign In</i>
+                Sign In
               </Link>
             </li>
             <li>
               <Link href="#" className="btn btn-light">
-                <i className="fas apply">Apply</i>
+                Apply
               </Link>
             </li>
           </ul>
@@ -89,12 +89,12 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <Link href="#" className="btn btn-dark">
-                <i className="fas">Sign In</i>
+                Sign In
               </Link>
             </li>
             <li>
               <Link href="#" className="btn btn-light">
-                <i className="fas apply">Apply</i>
+                Apply
               </Link>
             </li>
           </ul>

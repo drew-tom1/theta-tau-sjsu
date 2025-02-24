@@ -84,6 +84,10 @@ img {
   color: var(--yellow);
 }
 
+.apply {
+  color: var(--black);
+}
+
 .navbar ul li:nth-last-child(2) a {
   margin-left: 30px;
 }
@@ -199,6 +203,7 @@ img {
 
 .btn-light:hover {
   opacity: 0.8;
+  background-color: var(--black);
 }
 .btn-light:hover i {
   color: var(--black);
@@ -590,7 +595,7 @@ img {
   width: 250px;
   height: 100%;
   z-index: 100;
-  background: black;
+  background: var(--black);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease-in-out;
 }
