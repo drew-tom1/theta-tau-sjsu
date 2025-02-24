@@ -67,7 +67,7 @@ export default function Footer() {
             <h4>Contact</h4>
             <ul>
               <li>
-                <a href="">Hello@grwothapp.com</a>
+                <a href="#">sjsuthetatau@gmail.com</a>
               </li>
             </ul>
           </div>

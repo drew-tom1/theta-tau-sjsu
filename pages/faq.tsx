@@ -10,7 +10,7 @@ export default function faq() {
 useEffect(() => {
   const faqContainer = document.querySelector(".faq-content");
 
-  // Explicitly type the event as 'Event'
+
   const handleClick = (e: Event) => {
     const target = e.target as HTMLElement | null;
 
@@ -24,14 +24,14 @@ useEffect(() => {
 
     const group = groupHeader.parentElement;
     const groupBody = group?.querySelector(".faq-group-body");
-    const icon = groupHeader.querySelector("svg"); // For FontAwesome icons
+    const icon = groupHeader.querySelector("svg");
 
     // Toggle the FAQ answer visibility
     if (groupBody) {
       groupBody.classList.toggle("open");
     }
 
-    // Close other FAQ bodies when opening a new one
+
     const otherGroups = faqContainer?.querySelectorAll(".faq-group");
     otherGroups?.forEach((otherGroup) => {
       if (otherGroup !== group) {
@@ -44,7 +44,7 @@ useEffect(() => {
       }
     });
 
-    // Icon Toggle
+
     if (icon) {
       if (icon.classList.contains("fa-plus")) {
         icon.classList.remove("fa-plus");
