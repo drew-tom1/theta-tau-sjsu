@@ -227,11 +227,11 @@ img {
 }
 
 .text-m {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .text-s {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .text-thin {
@@ -439,12 +439,20 @@ img {
   cursor: pointer;
 }
 
+/* Text transition when opening FAQ question body */
 .faq .faq-group .faq-group-body {
-  display: none;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+  line-height: 0;
+  padding: 0 1em;
+  color: transparent;
 }
 
 .faq .faq-group .faq-group-body.open {
-  display: block;
+  line-height: 1.5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: var(--lighter-grey);
 }
 
 .faq ul.faq-menu {
@@ -634,7 +642,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 805px) {
   .hamburger-button {
     display: block;
     position: fixed;

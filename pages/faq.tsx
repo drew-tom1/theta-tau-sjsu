@@ -82,7 +82,6 @@ useEffect(() => {
       <section className="faq">
         <div className="container-small">
           <h3 className="text-xl light-color">Frequently Asked Questions</h3>
-          
 
           {/* FAQ Menu Not 100% if we need to implement tbh */}
           {/* <ul className="faq-menu">
@@ -94,33 +93,116 @@ useEffect(() => {
           <div className="faq-content">
             <div className="faq-group">
               <div className="faq-group-header text-m">
-                <h4>How much are dues?</h4>
+                <h4>What is a professional fraternity?</h4>
                 <FontAwesomeIcon icon={faMinus} className="fa fa-minus" />
               </div>
               <div className="faq-group-body open text-s text-thin">
-                <p>$200</p>
+                <p>
+                  A professional fraternity is a brotherhood consisting chiefly
+                  of individuals in a specific field of education, promoting
+                  professional development in addition to strengthening
+                  brotherly ties.
+                </p>
               </div>
             </div>
 
             <div className="faq-group">
               <div className="faq-group-header text-m">
-                <h4>Is there any hazing?</h4>
+                <h4>What is rush?</h4>
                 <FontAwesomeIcon icon={faMinus} className="fa fa-minus" />
               </div>
               <div className="faq-group-body text-s text-thin">
-                <p>No.</p>
+                <p>
+                  Rush is an opportunity for you to learn more about Theta Tau
+                  by meeting both our active and graduated brothers. Rush
+                  consists of multiple events that will give you a taste of what
+                  our fraternity stands for, whether you are a good fit for us,
+                  and whether we are a good fit for you. At the end of rush, we
+                  extend a limited number of interviews and bids. Those who
+                  receive bids can then decide whether or not they would like to
+                  pledge. Rushing is completely free of charge and there are no
+                  obligations.
+                </p>
               </div>
             </div>
 
             <div className="faq-group">
               <div className="faq-group-header text-m">
-                <h4>What are the benifits?</h4>
+                <h4>Who can rush?</h4>
                 <FontAwesomeIcon icon={faMinus} className="fa fa-minus" />
               </div>
               <div className="faq-group-body text-s text-thin">
-                <p>You can get to meet friends and people.</p>
+                <p>
+                  Students must be full-time students and be in good academic
+                  standing with the university (above 2.0 GPA). Students
+                  studying that are studying Masters are also encouraged to
+                  rush.
+                </p>
               </div>
             </div>
+
+            <div className="faq-group">
+              <div className="faq-group-header text-m">
+                <h4>What is a bid?</h4>
+                <FontAwesomeIcon icon={faMinus} className="fa fa-minus" />
+              </div>
+              <div className="faq-group-body text-s text-thin">
+                <p>
+                  A bid is a formal invitation to begin pledging, the process of
+                  becoming a brother.
+                </p>
+              </div>
+            </div>
+
+            <div className="faq-group">
+              <div className="faq-group-header text-m">
+                <h4>How do you choose who receives a bid?</h4>
+                <FontAwesomeIcon icon={faMinus} className="fa fa-minus" />
+              </div>
+              <div className="faq-group-body text-s text-thin">
+                <p>
+                  Theta Tau searches for engineers who have a strong foundation
+                  in its three pillars: Brotherhood, Professionalism, and
+                  Service. We review each applicant as a whole (grades,
+                  personality, professionalism, resume, etc.) to determine
+                  whether we are the right fit for you.
+                </p>
+              </div>
+            </div>
+
+            <div className="faq-group">
+              <div className="faq-group-header text-m">
+                <h4>Do you only accept engineering majors?</h4>
+                <FontAwesomeIcon icon={faMinus} className="fa fa-minus" />
+              </div>
+              <div className="faq-group-body text-s text-thin">
+                <p>
+                  No, we have accepted students of related majors in the past
+                  such as Computer Science, Applied Math, Packaging, and
+                  Cognitive Science.
+                </p>
+              </div>
+            </div>
+
+            <div className="faq-group">
+              <div className="faq-group-header text-m">
+                <h4>What is pledging?</h4>
+                <FontAwesomeIcon icon={faMinus} className="fa fa-minus" />
+              </div>
+              <div className="faq-group-body text-s text-thin">
+                <p>
+                  Pledging is the process by which individuals integrate
+                  themselves into the brotherhood. It is led by pledge
+                  instructors, who assist the pledges in developing their
+                  professional skills, aiding the community, and most important
+                  of all, getting to know their future brothers.
+                </p>
+              </div>
+            </div>
+
+
+
+            
           </div>
         </div>
       </section>
