@@ -81,7 +81,9 @@ useEffect(() => {
 
       <section className="faq">
         <div className="container-small">
-          <h3 className="text-xl light-color">Frequently Asked Questions</h3>
+          <h3 className="text-xl light-color ">
+            Frequently Asked Questions
+          </h3>
 
           {/* FAQ Menu Not 100% if we need to implement tbh */}
           {/* <ul className="faq-menu">
@@ -199,10 +201,6 @@ useEffect(() => {
                 </p>
               </div>
             </div>
-
-
-
-            
           </div>
         </div>
       </section>
