@@ -518,8 +518,7 @@ img {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 2fr 2fr 2fr;
   justify-content: center;
   align-items: center;
 }
@@ -543,9 +542,6 @@ img {
   margin: 20px 0px;
 }
 
-.contact-card {
-  padding-bottom: 80px;
-}
 
 
 

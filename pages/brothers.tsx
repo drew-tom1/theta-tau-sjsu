@@ -3,7 +3,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 
 
-export default function About() {
+export default function BrothersPage() {
     return (
       <>
         <Head>

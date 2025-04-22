@@ -29,8 +29,6 @@ export default function Footer() {
                 Subscribe
               </button>
             </div>
-            <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
-            <FontAwesomeIcon icon={faInstagram} className="social-icon" />
           </div>
 
           <div className="">
@@ -48,26 +46,17 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
-            <h4>Resources</h4>
-            <ul>
-              <li>
-                <a href="#">News</a>
-              </li>
-              <li>
-                <a href="#">Research</a>
-              </li>
-              <li>
-                <a href="#">Recent Projects</a>
-              </li>
-            </ul>
-          </div>
-
           <div className="contact-card">
             <h4>Contact</h4>
             <ul>
               <li>
-                <a href="#">sjsuthetatau@gmail.com</a>
+                <a href="mailto:sjsuthetatau@gmail.com">email → sjsuthetatau@gmail.com</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sjsuthetatau/?hl=en">instagram → @sjsuthetatau</a>
+              </li>
+              <li>
+                <p className="hover:">discord →<a className="" href="https://discord.gg/xz7QtJ9Unh"> theta tau rush</a></p>
               </li>
             </ul>
           </div>
