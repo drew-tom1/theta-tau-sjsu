@@ -15,9 +15,6 @@ export default function Home() {
         <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
       </Head>
 
-      {/* Navbar Component */}
-      <Navbar />
-
       {/* Hero Section */}
       <section className="hero">
         <div className="container">

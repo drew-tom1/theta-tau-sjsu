@@ -76,9 +76,6 @@ useEffect(() => {
         <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
       </Head>
 
-      {/* Navbar */}
-      <Navbar />
-
       <section className="faq">
         <div className="container-small">
           <h3 className="text-xl light-color ">

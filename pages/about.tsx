@@ -13,9 +13,6 @@ export default function About() {
         <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
       </Head>
 
-      {/* Navbar */}
-      <Navbar />
-
       {/* About Section */}
       <section className="about">
         <div className="container">

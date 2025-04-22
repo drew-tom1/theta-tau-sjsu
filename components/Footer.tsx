@@ -56,7 +56,7 @@ export default function Footer() {
                 <a href="https://www.instagram.com/sjsuthetatau/?hl=en">instagram → @sjsuthetatau</a>
               </li>
               <li>
-                <p className="hover:">discord →<a className="" href="https://discord.gg/xz7QtJ9Unh"> theta tau rush</a></p>
+                <a className="" href="https://discord.gg/xz7QtJ9Unh">discord → theta tau rush</a>
               </li>
             </ul>
           </div>
